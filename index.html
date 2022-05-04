@@ -441,78 +441,78 @@
           </ul>
         </div>
       </section>
-    </main>
 
-    <!-- Секция "Постоянные клиенты" -->
-    <section class="clients section">
-      <div class="container">
-        <h2 class="clients-title">Постоянные клиенты</h2>
-        <ul class="clients-list list">
-          <li class="clients-item">
-            <a
-              href=""
-              target="_blank"
-              rel="noreferrer noopener"
-              class="clients-link"
-            >
-              <svg class="clients-icon" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-logo1"></use>
-              </svg>
-            </a>
-          </li>
-          <li class="clients-item">
-            <a
-              href=""
-              target="_blank"
-              rel="noreferrer noopener"
-              class="clients-link"
-              ><svg class="clients-icon" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-logo2"></use></svg
-            ></a>
-          </li>
-          <li class="clients-item">
-            <a
-              href=""
-              target="_blank"
-              rel="noreferrer noopener"
-              class="clients-link"
-              ><svg class="clients-icon" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-logo3"></use></svg
-            ></a>
-          </li>
-          <li class="clients-item">
-            <a
-              href=""
-              target="_blank"
-              rel="noreferrer noopener"
-              class="clients-link"
-              ><svg class="clients-icon" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-logo4"></use></svg
-            ></a>
-          </li>
-          <li class="clients-item">
-            <a
-              href=""
-              target="_blank"
-              rel="noreferrer noopener"
-              class="clients-link"
-              ><svg class="clients-icon" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-logo5"></use></svg
-            ></a>
-          </li>
-          <li class="clients-item">
-            <a
-              href=""
-              target="_blank"
-              rel="noreferrer noopener"
-              class="clients-link"
-              ><svg class="clients-icon" width="106" height="60">
-                <use href="./images/symbol-defs.svg#icon-logo6"></use></svg
-            ></a>
-          </li>
-        </ul>
-      </div>
-    </section>
+      <!-- Секция "Постоянные клиенты" -->
+      <section class="clients section">
+        <div class="container">
+          <h2 class="clients-title">Постоянные клиенты</h2>
+          <ul class="clients-list list">
+            <li class="clients-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                class="clients-link"
+              >
+                <svg class="clients-icon" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-logo1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="clients-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                class="clients-link"
+                ><svg class="clients-icon" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-logo2"></use></svg
+              ></a>
+            </li>
+            <li class="clients-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                class="clients-link"
+                ><svg class="clients-icon" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-logo3"></use></svg
+              ></a>
+            </li>
+            <li class="clients-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                class="clients-link"
+                ><svg class="clients-icon" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-logo4"></use></svg
+              ></a>
+            </li>
+            <li class="clients-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                class="clients-link"
+                ><svg class="clients-icon" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-logo5"></use></svg
+              ></a>
+            </li>
+            <li class="clients-item">
+              <a
+                href=""
+                target="_blank"
+                rel="noreferrer noopener"
+                class="clients-link"
+                ><svg class="clients-icon" width="106" height="60">
+                  <use href="./images/symbol-defs.svg#icon-logo6"></use></svg
+              ></a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
 
     <!-- Подвал сайта -->
     <footer class="footer">
@@ -601,18 +601,22 @@
           </ul>
         </div>
         <div>
-          <form>
-            <label for="follow" class="follow-label"
-              >Подпишитесь на рассылку</label
-            >
-            <input
-              type="email"
-              name="email"
-              id="follow"
-              placeholder="E-mail"
-              class="follow-field"
-            />
-            <button type="submit" class="follow-btn btn">Подписаться</button>
+          <p class="follow-text">Подпишитесь на рассылку</p>
+          <form class="follow-form">
+            <div class="follow-field">
+              <input
+                type="email"
+                name="email"
+                id="follow"
+                placeholder="E-mail"
+                class="follow-input"
+              />
+            </div>
+            <button type="submit" class="follow-btn btn">Подписаться
+              <svg class="icon-btn-follow"" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-btn-follow"></use>
+              </svg>
+            </button>
           </form>
         </div>
       </div>
@@ -624,6 +628,22 @@
             <use href="./images/symbol-defs.svg#icon-close"></use>
           </svg>
         </button>
+        <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+        <form class="modal-form">
+          <label for="user-name">Имя</label>
+          <input type="name" name="name" id="user-name" placeholder=" " class="modal-input">
+          <label for="user-tel">Телефон</label>
+          <input type="tel" name="tel" id="user-tel" placeholder=" " class="modal-input">
+          <label for="user-email">Почта</label>
+          <input type="email" name="email" id="user-email" placeholder=" " class="modal-input">
+          <label for="user-comment">Комментарий</label>
+          <textarea name="comment" id="user-comment" ></textarea>
+
+            <input type="checkbox" class="agreenent" name="agreenent" id="agreenent">
+            <label for="agreenent">Соглашаюсь с рассылкой и принимаю <a href="" class="agreement-link">Условия договора</a></label>
+          <button type="submit">Отправить</button>
+</form>
+
       </div>
     </div>
     <script src="./js/modal.js"></script>

@@ -531,6 +531,10 @@ img {
   color: var(--accent-color);
 }
 
+.footer-social {
+  margin-right: 93px;
+}
+
 .footer-social-title {
   margin-bottom: 20px;
 
@@ -567,26 +571,40 @@ img {
   background-color: var(--accent-color);
 }
 
-.follow-label {
+.follow-form {
+  display: flex;
+}
+
+.follow-text {
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
+  line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--hero-title-color);
 }
 
 .follow-field {
+  display: block;
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+}
+
+.follow-input {
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  background-color: var(--footer-bgc);
-  font-size: 16px;
-  line-height: 20px;
-  letter-spacing: 0.03em;
-  color: rgba(255, 255, 255, 0.6);
+  border-radius: 4px;
 }
 
 .follow-btn {
-  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border: 1px solid transparent;
   border-radius: 4px;
   padding: 10px 29px;
@@ -599,10 +617,15 @@ img {
   color: var(--hero-title-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  fill: var(--hero-title-color);
   transition: background-color var(--transition-duration)
       var(--transition-timing),
     color var(--transition-duration) var(--transition-timing);
 }
+
+/* .icon-btn-follow {
+  margin-left: 12px;
+} */
 
 /* Portfolio Page */
 
