@@ -588,6 +588,7 @@ img {
 
 .follow-field {
   display: block;
+
   width: 358px;
   height: 50px;
   margin-right: 12px;
@@ -596,24 +597,40 @@ img {
 .follow-input {
   width: 100%;
   height: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
   background-color: transparent;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.6);
   border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
+  outline: none;
+  cursor: pointer;
 }
 
+.follow-input::placeholder {
+  color: rgba(255, 255, 255, 0.6);
+}
 .follow-btn {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  text-align: center;
+  position: relative;
+  min-width: 200px;
   border: 1px solid transparent;
   border-radius: 4px;
-  padding: 10px 29px;
-  min-width: 200px;
+  padding: 10px 62px 10px 29px;
+  margin-left: auto;
+  margin-right: auto;
+
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
   letter-spacing: 0.06em;
+  border-radius: 4px;
+  border: none;
   color: var(--hero-title-color);
   background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -623,9 +640,14 @@ img {
     color var(--transition-duration) var(--transition-timing);
 }
 
-/* .icon-btn-follow {
-  margin-left: 12px;
-} */
+.icon-btn-follow {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  right: 28px;
+  transform: translateY(-50%);
+}
 
 /* Portfolio Page */
 
@@ -784,12 +806,13 @@ img {
   transform: translate(-50%, -50%) scale(1) rotate(0);
 
   min-height: 581px;
-  min-width: 528px;
+  width: 528px;
 
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding: 40px;
 }
 
 .modal-close-btn {
@@ -807,4 +830,103 @@ img {
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   fill: #000000;
+  transition: fill var(--transition-duration) var(--transition-timing);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+  fill: var(--accent-color);
+}
+
+.modal-title {
+  text-align: center;
+  margin-bottom: 12px;
+
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-title-color);
+}
+
+.modal-form-item {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.modal-label {
+  margin-bottom: 4px;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: var(--main-text-color);
+}
+
+.modal-input-wrap {
+  position: relative;
+}
+
+.modal-input {
+  height: 40px;
+  width: 100%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
+  padding-left: 42px;
+  cursor: pointer;
+  fill: var(--main-title-color);
+  transition: border-color var(--transition-duration) var(--transition-timing);
+}
+
+.modal-input:hover,
+.modal-input:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-input + .modal-svg {
+  transition: fill var(--transition-duration) var(--transition-timing);
+}
+
+.modal-input:hover + .modal-svg {
+  fill: var(--accent-color);
+}
+
+.modal-input:focus + .modal-svg {
+  fill: var(--accent-color);
+}
+
+.modal-textarea {
+  width: 448px;
+  min-height: 120px;
+  resize: none;
+  margin-bottom: 20px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 12px 16px;
+  outline: none;
+  cursor: pointer;
+  transition: border-color var(--transition-duration) var(--transition-timing);
+  fill: var(--main-title-color);
+}
+
+.modal-textarea:hover,
+.modal-textarea:focus {
+  border-color: var(--accent-color);
+}
+
+.modal-textarea::placeholder {
+  font-size: 12px;
+  line-height: 1.67;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
+.modal-svg {
+  fill: var(--main-title-color);
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
 }
