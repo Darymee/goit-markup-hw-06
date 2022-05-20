@@ -503,7 +503,7 @@ img {
 .address-item .address-link {
   margin-bottom: 9px;
   font-size: 14px;
-  line-height: 1.71px;
+  line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--hero-title-color);
 
@@ -552,9 +552,11 @@ img {
   display: flex;
   justify-content: center;
 }
+
 .soc-item:not(:last-child) {
   margin-right: 10px;
 }
+
 .soc-link {
   display: flex;
   justify-content: center;
