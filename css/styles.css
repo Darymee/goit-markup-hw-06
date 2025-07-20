@@ -327,10 +327,22 @@ img {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding: 188px 0;
+  padding: 72px 0;
 
   max-width: 1440px;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .section-hero {
+    padding: 112px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .section-hero {
+    padding: 188px 0;
+  }
 }
 
 @media (min-resolution: 192dpi) {
@@ -344,17 +356,34 @@ img {
 }
 
 .hero-title {
-  font-size: 56px;
-  line-height: 1.07;
+  font-size: 36px;
+  line-height: 1.11;
   letter-spacing: 0.02em;
 
   color: var(--white-color);
 
   text-align: center;
 
-  margin: 0 auto 48px;
+  margin: 0 auto 72px;
 
-  max-width: 496px;
+  max-width: 216px;
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    font-size: 56px;
+    line-height: 1.07;
+
+    max-width: 496px;
+
+    margin: 0 auto 36px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .hero-title {
+    margin: 0 auto 48px;
+  }
 }
 
 .button-hero {
